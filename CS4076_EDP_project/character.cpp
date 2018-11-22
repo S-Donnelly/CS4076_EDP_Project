@@ -4,7 +4,7 @@ character::character()
 {
     inventory = new player_Inventory();
     name;
-    health = 100;
+    health = 50;
     aPlayer = new QGraphicsRectItem(100,100,50,50);
 }
 character::~character()
@@ -31,11 +31,12 @@ void character::setCharacterName(string name)
 }
 void character::decreaseHealth()
 {
-    health -= 5;
+    if (health > 0)
+        health -= 5;
 }
 void character::increaseHealth()
 {
-    if (health != 100)
+    if (health < 100)
         health += 5;
 }
 player_Inventory * character::getInventory()

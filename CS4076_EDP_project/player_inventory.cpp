@@ -14,3 +14,7 @@ void player_Inventory::removeFromInventory(item *anItem)
 {
     inventory.erase(remove(inventory.begin(), inventory.end(), anItem), inventory.end());
 }
+vector<item*> player_Inventory::getInventory()
+{
+    return inventory;
+}

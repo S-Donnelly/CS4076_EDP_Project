@@ -10,10 +10,7 @@ potion::potion(const QString description, const int weight, const double cost)
     this->weight = weight;
     this->cost = cost;
 }
-potion::~potion()
-{
-    delete this;
-}
+
 QString potion::getDescription()
 {
     return this->description;

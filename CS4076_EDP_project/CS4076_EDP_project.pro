@@ -31,7 +31,8 @@ SOURCES += \
     ui_layout.cpp \
     mybuttons.cpp \
     potion.cpp \
-    player_inventory.cpp
+    player_inventory.cpp \
+    weapons.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -40,7 +41,8 @@ HEADERS += \
     mybuttons.h \
     item.h \
     potion.h \
-    player_inventory.h
+    player_inventory.h \
+    weapons.h
 
 FORMS += \
         mainwindow.ui

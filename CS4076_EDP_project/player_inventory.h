@@ -10,6 +10,7 @@ public:
     player_Inventory();
     void addToInventory(item*);
     void removeFromInventory(item*);
+    vector<item*> getInventory();
 private:
     vector<item*> inventory;
 
